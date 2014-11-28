@@ -16,47 +16,154 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" fixedFrame="YES" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ND-tD-1uV">
-                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value One" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="odm-xO-nb5">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="144" width="97" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value Two" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="spU-0X-kDb">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="204" y="144" width="97" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ku-jP-Th7">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="60" y="154" width="184" height="21"/>
+                                    <rect key="frame" x="153" y="148" width="22" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g6g-C7-qEC">
-                                <rect key="frame" x="487" y="285" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="188" y="151" width="104" height="30"/>
-                                </variation>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpv-N7-CU4">
-                                <rect key="frame" x="265" y="361" width="70" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f65-jY-6bo">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Calculate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value One" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dpY-H1-vl7">
-                                <rect key="frame" x="16" y="285" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="150" width="89" height="30"/>
+                                    <rect key="frame" x="129" y="241" width="70" height="30"/>
                                 </variation>
-                            </textField>
+                                <connections>
+                                    <action selector="onButtonCalculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wxu-8m-gNB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="odm-xO-nb5"/>
+                                <exclude reference="spU-0X-kDb"/>
+                                <exclude reference="0Ku-jP-Th7"/>
+                                <exclude reference="f65-jY-6bo"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="odm-xO-nb5"/>
+                                <include reference="spU-0X-kDb"/>
+                                <include reference="0Ku-jP-Th7"/>
+                                <include reference="f65-jY-6bo"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Answer" id="cjR-UW-Zxz">
-                        <barButtonItem key="rightBarButtonItem" title="web" id="gAq-Dm-K93"/>
+                        <barButtonItem key="rightBarButtonItem" title="web" id="gAq-Dm-K93">
+                            <connections>
+                                <segue destination="2aG-3R-GQ6" kind="show" identifier="PageController" id="0CM-Zx-FwR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="navAnswer" destination="cjR-UW-Zxz" id="EBg-vA-4tj"/>
+                        <outlet property="navItemWeb" destination="gAq-Dm-K93" id="ePT-yV-TkG"/>
+                        <outlet property="textFielOne" destination="odm-xO-nb5" id="twE-t1-chw"/>
+                        <outlet property="textFieldTwo" destination="spU-0X-kDb" id="vJ9-Q6-qhN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951" y="272"/>
+            <point key="canvasLocation" x="769.5" y="271"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="cgn-vV-aLi">
+            <objects>
+                <viewController id="2aG-3R-GQ6" customClass="PageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZFJ-76-czv"/>
+                        <viewControllerLayoutGuide type="bottom" id="BPR-oQ-D92"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1l7-zi-HPI">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nb2-rV-bnY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2aG-3R-GQ6" id="VMT-Jw-Vzy"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="aU9-iP-QsO">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nb2-rV-bnY" firstAttribute="leading" secondItem="1l7-zi-HPI" secondAttribute="leading" id="ANE-5S-gGQ"/>
+                            <constraint firstAttribute="trailing" secondItem="aU9-iP-QsO" secondAttribute="trailing" constant="190" id="FTU-de-FmC"/>
+                            <constraint firstItem="aU9-iP-QsO" firstAttribute="leading" secondItem="1l7-zi-HPI" secondAttribute="leading" constant="190" id="Hpg-vB-bBk"/>
+                            <constraint firstItem="BPR-oQ-D92" firstAttribute="top" secondItem="aU9-iP-QsO" secondAttribute="bottom" constant="290" id="UJr-BC-KLR"/>
+                            <constraint firstItem="Nb2-rV-bnY" firstAttribute="top" secondItem="1l7-zi-HPI" secondAttribute="top" id="ZZ0-46-Oxr"/>
+                            <constraint firstItem="BPR-oQ-D92" firstAttribute="top" secondItem="Nb2-rV-bnY" secondAttribute="bottom" id="mLs-Ng-XSW"/>
+                            <constraint firstItem="aU9-iP-QsO" firstAttribute="top" secondItem="ZFJ-76-czv" secondAttribute="bottom" constant="226" id="sFP-mF-M84"/>
+                            <constraint firstAttribute="trailing" secondItem="Nb2-rV-bnY" secondAttribute="trailing" id="wcK-Va-qwX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Nb2-rV-bnY"/>
+                                <exclude reference="aU9-iP-QsO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ANE-5S-gGQ"/>
+                                <exclude reference="ZZ0-46-Oxr"/>
+                                <exclude reference="wcK-Va-qwX"/>
+                                <exclude reference="FTU-de-FmC"/>
+                                <exclude reference="Hpg-vB-bBk"/>
+                                <exclude reference="sFP-mF-M84"/>
+                                <exclude reference="UJr-BC-KLR"/>
+                                <exclude reference="mLs-Ng-XSW"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Nb2-rV-bnY"/>
+                                <include reference="aU9-iP-QsO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ANE-5S-gGQ"/>
+                                <include reference="ZZ0-46-Oxr"/>
+                                <include reference="wcK-Va-qwX"/>
+                                <include reference="FTU-de-FmC"/>
+                                <include reference="Hpg-vB-bBk"/>
+                                <include reference="sFP-mF-M84"/>
+                                <include reference="UJr-BC-KLR"/>
+                                <include reference="mLs-Ng-XSW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="aU9-iP-QsO" id="KD5-Ib-N48"/>
+                        <outlet property="webView" destination="Nb2-rV-bnY" id="EOX-er-Zro"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0G-Kf-bFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477.5" y="271"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cBT-Gn-w2D">

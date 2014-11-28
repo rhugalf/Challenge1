@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A51C0061A27EE2E009FCEF9 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A51C0051A27EE2E009FCEF9 /* PageViewController.m */; };
 		9ADD124A1A268419001EFA35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADD12491A268419001EFA35 /* main.m */; };
 		9ADD124D1A268419001EFA35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADD124C1A268419001EFA35 /* AppDelegate.m */; };
 		9ADD12501A268419001EFA35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADD124F1A268419001EFA35 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A51C0041A27EE2E009FCEF9 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		9A51C0051A27EE2E009FCEF9 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 		9ADD12441A268419001EFA35 /* Challenge1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADD12481A268419001EFA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ADD12491A268419001EFA35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				9ADD124C1A268419001EFA35 /* AppDelegate.m */,
 				9ADD124E1A268419001EFA35 /* ViewController.h */,
 				9ADD124F1A268419001EFA35 /* ViewController.m */,
+				9A51C0041A27EE2E009FCEF9 /* PageViewController.h */,
+				9A51C0051A27EE2E009FCEF9 /* PageViewController.m */,
 				9ADD12511A268419001EFA35 /* Main.storyboard */,
 				9ADD12541A268419001EFA35 /* Images.xcassets */,
 				9ADD12561A268419001EFA35 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				9ADD12501A268419001EFA35 /* ViewController.m in Sources */,
 				9ADD124D1A268419001EFA35 /* AppDelegate.m in Sources */,
 				9ADD124A1A268419001EFA35 /* main.m in Sources */,
+				9A51C0061A27EE2E009FCEF9 /* PageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +420,7 @@
 				9ADD12691A268419001EFA35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9ADD126A1A268419001EFA35 /* Build configuration list for PBXNativeTarget "Challenge1Tests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				9ADD126C1A268419001EFA35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
